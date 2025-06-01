@@ -124,7 +124,7 @@ const OutputSection = ({
             Belum ada data untuk ditampilkan.
           </p>
           <p className="text-slate-400 text-sm mt-2">
-            Silakan masukkan data dan klik "Hitung ELECTRE".
+            Silakan masukkan data dan klik &quot;Hitung ELECTRE&quot;.
           </p>
         </div>
       )}

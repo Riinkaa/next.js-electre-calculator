@@ -57,7 +57,7 @@ const InputSection = ({
                 <th className="p-3 bg-slate-100 border-b border-gray-300 text-left text-sm font-medium text-gray-600">
                   Alternatif / Kriteria
                 </th>
-                {criteriaList.map((crit, critIndex) => (
+                {criteriaList.map((crit) => (
                   <th
                     key={crit.id} // Use crit.id for key if available and unique
                     className="p-3 bg-slate-100 border-b border-l border-gray-300 text-left text-sm font-medium text-gray-600 min-w-[100px]"
@@ -68,12 +68,12 @@ const InputSection = ({
               </tr>
             </thead>
             <tbody>
-              {alternativesList.map((alt, altIndex) => (
+              {alternativesList.map((alt) => (
                 <tr key={alt.id}>
                   <td className="p-2.5 border-b border-gray-300 bg-slate-50 font-medium text-slate-700 text-sm">
                     {alt.name}
                   </td>
-                  {criteriaList.map((crit, critIndex) => (
+                  {criteriaList.map((crit) => (
                     <td key={crit.id} style={{ padding: "0" }}>
                       <input
                         type="number" // Atau "text" jika ingin lebih fleksibel dan validasi manual
